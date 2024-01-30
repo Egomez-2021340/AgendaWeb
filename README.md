@@ -1,0 +1,1 @@
+"In this repository, we're working on a web project (HTML5, CSS, and JavaScript) aimed at providing a more efficient way to organize your contacts. With your own user account, you'll be able to add new contacts, view contact details, add them to your favorites list, view your logged-in user profile, and have a To-Do List feature." 
