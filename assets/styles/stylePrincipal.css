@@ -17,7 +17,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: rgba(0, 0, 0, 0.767);
+  background: rgba(54, 95, 143, 0.767);
   color: rgba(245, 241, 241, 0.859)
 }
 
@@ -47,6 +47,27 @@ html {
   font-size: 17px;
 }
 
+.formulario-de-datos ::placeholder {
+  color: rgba(51, 50, 50, 0.611);
+}
+.overlay2 {
+  position:relative;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  font-size: 18px;
+}
+
+.overlay2 a{
+  text-decoration: none;
+  color: purple;
+}
+
+.overlay2 a :visited{
+  color: rgb(62, 2, 62);
+}
+
 .formulario-de-datos {
   display: block;
   width: 50%;
@@ -54,6 +75,8 @@ html {
   display: flex;
   flex-direction: column;
 }
+
+
 
 .formulario-de-datos input {
   margin: 0.5rem 0rem;
@@ -93,6 +116,6 @@ html {
   cursor: pointer;
 }
 
-.tarea img{
+.tarea img {
   width: 30px;
 }
