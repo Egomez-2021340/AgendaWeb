@@ -1,16 +1,22 @@
 const guardarContacto = (db, contacto) => {
-    db.setItem(contacto.id, JSON.stringify(contacto))
-    window.location = './paginaPrincipal.html'
+    db.setItem(contacto.id, JSON.stringify(contacto));
+    window.location = './paginaPrincipal.html';
 }
+
+
 
 const cargarDatos = () => {
     let claves = Object.keys(db)
 
     for (clave of claves) {
-        let contacto = JSON.parse(db.getItem(clave))
-        crearContacto(listadoTareas, contacto, db)
+        let contactoString = db.getItem(clave);
+        if (contactoString) {
+            let contacto = JSON.parse(contactoString);
+            crearContacto(listadoTareas, contacto, db);
+        }
     }
 }
+
 
 const crearContacto = (parentNode, contacto, db) => {
     let divContacto = document.createElement('div')
@@ -22,12 +28,12 @@ const crearContacto = (parentNode, contacto, db) => {
     nombreContacto.innerHTML = contacto.nombre
     telefonoContacto.innerHTML = contacto.telefono
     direccionContacto.innerHTML = contacto.direccion
-    
+
     divContacto.classList.add('tarea')
-    
+
     divContacto.appendChild(nombreContacto)
     divContacto.appendChild(telefonoContacto)
     divContacto.appendChild(direccionContacto)
-    
+
     parentNode.appendChild(divContacto)
 }

@@ -5,7 +5,7 @@ button.addEventListener('click', () => {
     const password = document.getElementById('password').value;
 
     if (username.trim() !== '' && password.trim() !== '') {
-        window.location.href = '../../paginaPrincipal.html';
+        window.location.href = './paginaPrincipal.html';
 
     } else {
         alert("Por favor ingresa usuario y contraseña");
