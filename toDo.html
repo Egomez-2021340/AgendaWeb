@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="./assets/styles/styleToDo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Mohave:ital,wght@0,300..700;1,300..700&family=Ojuju:wght@200..800&family=Truculenta:opsz,wght@12..72,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="madimi-one-regular">
+        <div class="overlay">
+            <div class="todo-list">
+                <h2>Lista de Tareas <img src="./assets/img/icon.png"></h2>
+                <div class="row">
+                    <input type="text" id="input-box" placeholder="Nombre de Tarea">
+                    <button onclick="addTask()">Crear</button>
+                </div>
+                <ul id="lista-contendor">
+                    <!-- <li class="checked">Tarea 1</li>
+                    <li>Tarea 2</li>
+                    <li>Tarea 3</li> -->
+                </ul>
+                <div class="overlay2">
+                    <a href="./paginaPrincipal.html">Agenda de Contactos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/logicaToDo.js"></script>
+</body>
+
+</html>
